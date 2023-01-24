@@ -1,0 +1,11 @@
+1、把压缩文件diabetes解压到目录dataset中，预处理已经处理过了
+2、在运行命令python learning_process.py即可
+对于Partial model，将GLNN\client.py中第26行的model换成NeuralNetwork，把GLNN\GlobalModel\Server中hidden，input层的聚合代码注释掉
+对于Baselines，将GLNN\client.py中第23与24行的model换成GLNN\GlobalModelneural_net_work.py中的其他model
+查看运行结果，将result放到ROC-AUC.py中指定的目录下或者更改ROC-AUC.py中的paths变量，然后运行python ROC-AUC.py
+
+1, Unzip the zip file 'diabetes.zip' to the directory 'dataset'. The data is already pre-operated.
+2, Run the command 'python learning_process.py' 
+For Partial model, replace the model in line 26 of GLNN\client.py with NeuralNetwork, and comment out the hidden and input layer aggregation code in GLNN\GlobalModel\Server.py
+For Baselines, replace the models in lines 23 and 24 of *\client.py with other models in *\GlobalModel\neural_net_work.py
+To see the result, put the directory 'result' in the directory specified in ROC-AUC.py or change the 'paths' variable in ROC-AUC.py, then run python ROC-AUC.py
